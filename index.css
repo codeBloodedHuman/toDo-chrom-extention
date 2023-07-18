@@ -1,0 +1,99 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 150px;
+    min-height: 500px;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    padding: 0 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0;
+    font-weight: bolder;
+}
+
+.input-div {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.task-input {
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+}
+
+.tasks-list-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-div {
+    display: flex;
+    justify-content: space-between;
+    margin: .7rem 0rem;
+}
+
+.task-div:not(:last-child) {
+    padding-bottom: 1.5rem;
+    border-bottom : solid 1px black;
+}
+
+.task-text {
+    justify-self: center;
+    max-width: 20rem;
+    word-wrap: break-word;
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #2a363b80;
+}
+
+.task-controls {
+    display: flex;
+    align-items: center;
+}
+
+.task-clear-div {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 1.5rem 0;
+}
+
+.task-btn {
+    min-width: 4rem;
+    padding: .7rem .9rem;
+    background-color: #ffffff;
+}
+
+.task-btn:not(:last-child) {
+    border-right : solid 1px black;
+}
+
+.task-btn:hover, .task-btn:focus {
+    background-color: #716c6d;
+}
+
+.task-input, .task-btn-edit {
+    border-radius: 7px 0 0 7px;
+}
+
+.task-btn-submit, .task-btn-do {
+    border-radius: 0 7px 7px 0;
+}
+
+.task-btn-clear {
+    border-radius: 7px;
+}
